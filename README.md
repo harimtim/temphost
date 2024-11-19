@@ -1,5 +1,5 @@
 ## Usage
-There are multiple ways to use the service, you can use the official [temphost.online](https://choosealicense.com/licenses/mit/) website made by me. Or use its API with your terminal.
+There are multiple ways to use the service, you can use the official [temphost.online](https://temphost.online/) website made by me. Or use its API with your terminal.
 
 #### Upload a File
 ```bash
