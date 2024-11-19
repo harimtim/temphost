@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <meta name="google-site-verification" content="fQ3rChcVH__6LBIuRFmGW2m16wRtb-xW5Rh-F7V0XjY" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8351389902083993"
+     crossorigin="anonymous"></script>
+</head>
+    <link rel="shortcut icon" href="/static/server.ico" type="image/x-icon">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        height: 0;
+    }
+    body {
+        background-color: #222;
+        font-family: "consolas", "Courier Prime", sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: larger;
+    }
+
+    .heading {
+        margin-top: 60px;
+        color: lightsalmon;
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+
+    .main {
+        width: 650px;
+    }
+
+    .online {
+        color: lightblue;
+    }
+
+    .dot {
+        color: white;
+    }
+    
+    #file-upload {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-link {
+        text-decoration: none;
+        color: lightgreen;
+    }
+
+    #file-upload label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: .4em 2em;
+        color: #222;
+        font-weight: bold;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .code {
+        padding: .4em 1.5em;
+        color: #222;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+
+    .a50 {
+        margin-top: 50px;
+    }
+
+    .support-heading {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .support {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .support-img {
+        margin-top: 10px;
+    }
+
+    .upload-limit {
+        color: orchid;
+    }
+
+    .version {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: gray;
+    }
+
+    .living-time {
+        color: yellow;
+    }
+
+    .green-bg {
+        background-color: lightgreen;
+    }
+
+    .green-c {
+        color: lightgreen;
+    }
+
+    .pink-c {
+        color: lightpink;
+    }
+
+    .pink-bg {
+        background-color: lightpink;
+    }
+
+    .no-select {
+        user-select: none;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    .support-bot {
+        padding-bottom: 50px;
+    }
+
+    .download {
+        width: 650px;
+    }
+
+    .download-container {
+        width: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .download-container input {
+        width: 70%;
+        padding: .4em 2em;
+        color: #222;
+        font-weight: bold;
+        background-color: lightgreen;
+        font-family: "consolas", "Courier Prime", sans-serif;
+        border: none;
+        font-size: large;
+        border-radius: 3px 0px 0px 3px;
+        outline: none;
+
+    }
+
+    .download-container button {
+        width: 30%;
+        padding: .4em 2em;
+        color: #222;
+        font-weight: bold;
+        background-color: white;
+        font-family: "consolas", "Courier Prime", sans-serif;
+        border: none;
+        background-color: white;
+        font-size: large;
+        border-radius: 0px 3px 3px 0px;
+        cursor: pointer;
+    }
+
+    .color-temphost {
+        color: lightsalmon;
+    }
+
+    @media screen and (max-width: 768px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    .support-heading {
+        margin-top: 70px;
+        font-size: 14px;
+    }
+
+    #file-upload {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .margin-top-50 {
+        margin-top: 20px;
+    }
+
+
+    .main {
+        width: 250px;
+    }
+
+    #file-upload {
+        width: 250px;
+    }
+
+    .support-img {
+        width: 40px;
+    }
+
+    .download {
+        width: 250px;
+    }
+
+    .download-container {
+        width: 250px;
+    }
+
+    .download-container input, .download-container button{
+        font-size: 10px;
+        font-family: "consolas", "Courier Prime", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+</style>
+
+<body>
+
+    <span class="version">{{version}}</span>
+    <span class="heading">temphost<span></span><span class="dot">.</span><span class="online">online</span></span>
+    <div class="main">
+        <p>Host your files for up to <span class="living-time">{{living_time}}</span> minutes for free. This is a project from <a class="project-link" href="https://github.com/harimtim">harimtim</a>. Your size limit is <span class="upload-limit">{{upload_limit}}</span> MB per upload.</p>
+    </div>
+    
+    <form class="main" action="" method="POST" id="file-upload" enctype="multipart/form-data">
+        <label for="file" type="submit">Upload</label>
+        <input hidden type="file" name="file" id="file">
+    </form>
+
+    <form hidden class="download" action="/download" method="POST" id="download" enctype="multipart/form-data">
+        <div class="download-container">
+            <input required placeholder="https://temphost.online/YOURLINK" type="text" name="file-path">
+            <button type="submit">Download</button>
+        </div>
+    </form>
+
+    <div class="main">
+        <p>You can also <span class="pink-c">upload</span> your files via your terminal:</p>
+        <div class="code pink-bg">
+            <span class="no-select">$ </span>curl -F "file=@file.txt" https://temphost.online
+        </div>
+
+        <p class="margin-top-50">You can <span class="green-c">download</span> your target files via your terminal aswell:</p>
+        <div class="code green-bg">
+            <span class="no-select">$ </span>curl -O https://temphost.online/YOURLINK
+        </div>
+    </div>
+
+    <div class="main center-text support-bot">
+        <p class="support-heading">Support</p>
+        <span class="support-text">Here you can support me, to do more cool projects like this! <span class="color-temphost">temphost</span> is free to use, but our hostings costs are not.</p>
+        <div class="support">
+
+            <a href="https://buymeacoffee.com/harimtim">
+                <img class="support-img" src="/static/cof.png" alt="buymeacoffee" width="50" style="border-radius: 6px;">
+            </a>
+            <a href="https://github.com/harimtim">
+                <img class="support-img" src="/static/hashcat.png" alt="buymeacoffee" width="50" style="border-radius: 6px;">
+            </a>
+
+
+        </div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('file');
+        const form = document.getElementById('file-upload');
+
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                form.submit();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <meta name="google-site-verification" content="fQ3rChcVH__6LBIuRFmGW2m16wRtb-xW5Rh-F7V0XjY" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8351389902083993"
+     crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        height: 0;
+    }
+    body {
+        background-color: #222;
+        font-family: "consolas", "Courier Prime", sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: larger;
+    }
+
+    .heading {
+        margin-top: 60px;
+        color: lightsalmon;
+        font-size: 40px;
+    }
+
+    .main {
+        max-width: 633.39px;
+    }
+
+    .online {
+        color: lightblue;
+    }
+
+    .dot {
+        color: white;
+    }
+    
+    form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: lightgreen;
+    }
+
+    form label {
+        padding: .4em 2em;
+        color: #222;
+        font-weight: bold;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: 700ms;
+    }
+
+    form label:hover {
+        transform: scale(1.1);
+    }
+
+    .code {
+        background-color: lightpink;
+        padding: .4em 1.5em;
+        color: #222;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+
+    .a50 {
+        margin-top: 50px;
+    }
+
+    .heading-lil {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .support {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    img {
+        margin-top: 10px;
+    }
+
+    .upload-limit {
+        color: orchid;
+    }
+
+    .version {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: gray;
+    }
+
+    .living-time {
+        color: yellow;
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+    /* Styles für mobile Geräte */
+    body {
+        font-size: 10px;
+    }
+
+    .heading-lil {
+        margin-top: 100px;
+        font-size: 14px;
+    }
+
+    form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .support-text {
+        padding-bottom: 0px;
+    }
+
+    .a50 {
+        margin-top: 20px;
+    }
+
+
+    .main {
+        max-width: 263.93px;
+    }
+
+    img {
+        width: 40px;
+    }
+
+}
+
+</style>
+
+<body>
+
+    <span class="version">{{version}}</span>
+
+    <span class="heading">temphost<span></span><span class="dot">.</span><span class="online">online</span></span>
+    <div class="main"><p style="margin-top: 30px; max-width: 633.39px;">Host your files for up to <span class="living-time">{{living_time}}</span> minutes for free. This is a project from <a href="https://github.com/harimtim">harimtim</a>. Your size limit is <span class="upload-limit">{{upload_limit}}</span> MB per upload.</p></div>
+    
+    <form action="" method="POST" id="file-upload" enctype="multipart/form-data">
+        <label for="file" type="submit">Upload</label>
+        <input hidden type="file" name="file" id="file">
+    </form>
+
+    <div class="main">
+        <p>You can also <span style="color: lightpink;">upload</span> your files via your terminal:</p>
+        <div class="code">
+            <span style="user-select: none;">$</span> curl -F "file=@file.txt" https://temphost.online
+        </div>
+
+        <p class="a50">You can <span style="color: lightgreen;">download</span> your target files via your terminal aswell:</p>
+        <div class="code" style="background-color: lightgreen;">
+            <span style="user-select: none;">$</span>    curl -O https://temphost.online/YOURLINK
+        </div>
+    </div>
+
+    <div class="main" style="padding-bottom: 50px;">
+        <p class="heading-lil">Support</p>
+        <span class="support-text">Here you can support me, to do more cool projects like this!</p>
+        <div class="support">
+            <a href="https://buymeacoffee.com/harimtim">
+                <img src="/static/cof.png" alt="buymeacoffee" width="50" style="border-radius: 6px;">
+            </a>
+            <a href="https://github.com/harimtim">
+                <img src="/static/hashcat.png" alt="buymeacoffee" width="50" style="border-radius: 6px;">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Get the input and form elements
+        const fileInput = document.getElementById('file');
+        const form = document.getElementById('file-upload');
+
+        // Add an event listener to submit the form when a file is selected
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                form.submit();
+            }
+        });
+    </script>
+</body>
+</html>
